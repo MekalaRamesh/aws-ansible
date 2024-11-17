@@ -1,0 +1,6 @@
+- name: Provision EC2 instance on AWS
+  hosts: aws
+  vars_files:
+    - ../aws_credentials.yml
+  roles:
+    - ec2
